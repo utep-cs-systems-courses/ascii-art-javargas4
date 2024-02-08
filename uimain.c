@@ -3,11 +3,11 @@
 
 int main() 
 {
-  puts("Welcome!");
+  puts("\t\t        Welcome!");
 
   while (1) { // Infinite while loop
 
-    fputs("Select which shape you want to printss (Triangle = t, Square = s, Chars = c) or 'q' to quit\n> ", stdout);
+    fputs("\t   Select the shape you want print: \nTriangle = t    Square = s    Letters = c    Arrow = a\n                 (or enter 'q' to quit)\nType Your Choice: ", stdout);
     fflush(stdout);		/* stdout only flushes automatically on \n */
     int c;
     while ((c = getchar()) == '\n'); /* ignore newlines */

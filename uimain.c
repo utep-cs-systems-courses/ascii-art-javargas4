@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "draw.h" // project-related declarations
+#include "stdbool.h"
 
 int main() 
 {
@@ -17,20 +18,22 @@ int main()
     // Given the user answer, select which method to call
     switch (c) {
     case 't':
-      puts("\nYou selected triangle:");
+      puts("\nYou selected triangle:\n");
       print_triangle(5, 7);
+      putchar('\n');
       break;
     case 's':
-      puts("\nYou selected square:");
-      print_square(5, 5);
+      puts("\nYou selected square:\n");
+      print_square(5, 5, false);
+      putchar('\n');
       break;
     case 'c':
-      puts("\nYou selected chars:");
+      puts("\nYou selected chars:\n");
       for (char c = 'A'; c < 'D'; c++)
 	print_char_11x16(c);
       break;
     case 'a':
-      puts("\nYou selected arrow:");
+      puts("\nYou selected arrow:\n");
       print_arrow(5, 7);
       break;
     case 'q':

@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 #include "draw.h" // project-related declarations
 #include "stdbool.h"
@@ -7,7 +9,7 @@ int main()
   puts("\t\t        Welcome!");
 
   while (1) { // Infinite while loop
-
+    // Console print out
     fputs("\t   Select the shape you want print: \nTriangle = t    Square = s    Letters = c    Arrow = a\n                 (or enter 'q' to quit)\nType Your Choice: ", stdout);
     fflush(stdout);		/* stdout only flushes automatically on \n */
     int c;
@@ -29,8 +31,9 @@ int main()
       break;
     case 'c':
       puts("\nYou selected chars:\n");
-      for (char c = 'A'; c < 'D'; c++)
-	print_char_11x16(c);
+      for (char c = 'a'; c < 'd'; c++)
+	// print_char_11x16(c);
+        print_char_8x12(c);
       break;
     case 'a':
       puts("\nYou selected arrow:\n");
